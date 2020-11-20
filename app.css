@@ -1,0 +1,125 @@
+body {
+  margin:0;
+  padding:0;
+}
+#theater {
+  width:90%;
+  height: 700px;  
+  margin:auto;
+  margin-top:10px;
+}
+.seat{
+  display: inline-block;
+  width: 40px;
+  height: 40px;  
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+  border: solid 1px #e4e4e4;
+  margin: 5px 5px 5px 5px;
+  border-radius: 8px;  
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;  
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;  
+}
+
+.booked {
+  color: white;
+  background:rgb(208 208 208);
+  cursor: not-allowed;
+}
+.available{  
+  background:white;
+  cursor: pointer;
+}
+#club-seating {
+  margin-top: 15px;
+}
+#executive-seating{
+  margin-top: 20px;
+}
+.separator{
+  display: block;
+}
+.hidden{
+  visibility: hidden;
+}
+#seating{
+  width:875px;
+  float:left;
+  overflow: scroll;
+}
+.seat.available.selected {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;  
+}
+#book-seat-container {  
+  width:700px;
+  height: 150px;
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+}
+.pay{
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  width:500px;
+  height: 50px;;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  cursor: pointer;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.pay.disabled{
+  background: #e4e4e4;
+  pointer-events: none;
+}
+.seat.available.golden {
+  border-bottom: solid 3px orange;
+}
+.row-label{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #b5b5b5;
+  font-size: 25px;
+  vertical-align: bottom;
+  font-family: sans-serif;
+}
+.heading{
+  border-bottom: solid 2px #e4e4e4;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  color: #b5b5b5;
+  font-size: 20px;
+}
+.seat-types{
+  position: absolute;  
+  right: 500px;
+  top: 14%;
+}
